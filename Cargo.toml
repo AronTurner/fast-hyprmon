@@ -1,0 +1,14 @@
+[package]
+name = "fast-hyprmon"
+version = "0.1.0"
+edition = "2024"
+description = "Terminal monitor layout manager for Hyprland"
+license = "MIT"
+repository = "https://github.com/AronTurner/fast-hyprmon"
+readme = "README.md"
+
+[profile.release]
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
